@@ -23,7 +23,7 @@ void addEntry()
     if (file != NULL) {
         fprintf(file, "[%s]\n%s\n\n", timestamp, entry);
         fclose(file);
-        printf("Entry added successfully!\n");
+        printf("Entry added successfully.\n");
     }
     else {
         printf("Error: Could not open diary file.\n");
@@ -63,7 +63,7 @@ int main()
             viewEntries();
             break;
         case 3:
-            printf("Exiting diary application.");
+            printf("Exiting diary application. Hope you return soon!");
             break;
         default:
             printf("Invalid input. Please enter a valid "
